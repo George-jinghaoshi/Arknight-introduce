@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<style>
+			body{
+				background: url(./img/login/loginbg.jpg) no-repeat center;
+				background-size: cover;
+				width: 100vw;
+				height: 100vh;
+				margin: 0;
+			}
+			.box{
+				width: 45%;
+				height: 450px;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 8);
+				display: flex;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.left{
+				width: 65%;
+			}
+			.left img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.right{
+				width: 35%;
+				height: 100%;
+				background-color: initial;
+				box-sizing:border-box;
+				padding: 0 20px;
+			}
+			h1{
+				color: white;
+				text-align: center;
+				padding-top: 45px;
+				margin-top: 0;
+			}
+			.inputItem{
+				height: 44px;
+				padding: 0;
+				padding-left: 5px;
+				border: none;
+				background:none;
+				outline: none;
+				border-bottom: 3px solid dodgerblue;
+				width: 100%;
+				font-size: 18px;
+				margin-top: 20px;
+			}
+			.register{
+				margin-top: 20px;
+				color: #9c3493;
+				text-align: center;
+				display: block;
+			}
+			.forgetPassword{
+				margin-top: 15px;
+				color: #9c3493;
+				text-align: center;
+				display: block;
+			}
+			.mainpage{
+				margin-top: 15px;
+				color: #9c3493;
+				text-align: center;
+				display: block;
+			}
+			.btn{
+				background: linear-gradient(to right, #65CBF7,black);
+				color: white;
+				font-weight: bold;
+				border: none;
+				border-radius: 30px;
+				height: 46px;
+				width: 80%;
+				font-size: 18px;
+				display: block;
+				margin: auto;
+				margin-top: 25px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="left">
+				<img src="img/login/login.jpeg" alt="" />
+			</div>
+			<div class="right">
+				<h1>Login</h1>
+				<input type="text" class="inputItem" placeholder="your account" >
+				<input type="password" class="inputItem" placeholder="your password" >
+				<a href="./register.html" class="register">
+					Go to register
+				</a>
+				<a href="#" class="forgetPassword">
+					Forget password?
+				</a>
+				<a href="./index.html" class="mainpage">
+					Back to main page
+				</a>
+				<button class="btn">
+					Login
+				</button>
+			</div>
+		</div>
+	</body>
+</html>
